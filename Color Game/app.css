@@ -1,0 +1,125 @@
+:root {
+    --accent10: #4ddbff;
+    --secondary30: #75ad29;
+    --primary60: #232323;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--primary60) !important;
+}
+
+.banner {
+    background: var(--secondary30);
+    color: var(--accent10);
+    /* text-shadow: 0 0px 3px #ffdd1a; */
+    width: 100%;
+    text-align: center;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.banner>h1 {
+    padding: 0.5rem 0;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+h1.pickedColor {
+    font-size: 1.6rem;
+    font-family: 'Muli', sans-serif;
+}
+
+#container {
+    margin: 12px auto 0;
+    max-width: 600px;
+}
+
+.square {
+    width: 30%;
+    margin: 1.66%;
+    float: left;
+    height: 120px;
+    border-radius: 15%;
+    transition: 0.45s ease;
+    -webkit-transition: 0.45s ease;
+    -moz-transition: 0.45s ease;
+}
+
+.d-none {
+    display: none;
+}
+
+.stripe {
+    font-family: 'Muli', sans-serif;
+    background: #e6e6e6;
+    text-align: center;
+    height: 30px;
+}
+
+#message {
+    display: inline-block;
+    width: 20%;
+    font-family: inherit;
+    white-space: nowrap;
+    font-size: 0.75rem;
+}
+
+button {
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-weight: 900;
+    font-size: 1rem;
+    height: 100%;
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    color: var(--accent10);
+    letter-spacing: 0.7px;
+}
+
+button:hover:not(.selected) {
+    background: var(--accent10);
+    color: var(--secondary30);
+    cursor: pointer;
+}
+
+button:focus,
+button:active {
+    border: none !important;
+    outline: none;
+}
+
+button.selected {
+    background-color: var(--secondary30);
+}
+
+#hard-btn {
+    margin-left: -4px;
+}
+
+@media screen and (min-width:768px) {
+    .banner>h1 {
+        font-size: 1.9rem;
+    }
+    h1.pickedColor {
+        font-size: 3rem;
+    }
+    .square {
+        height: 150px;
+    }
+    button {
+        font-size: 1.3rem;
+    }
+    #message {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width:451px) and (max-width:767px) {
+    .square {
+        height: 135px;
+    }
+}
